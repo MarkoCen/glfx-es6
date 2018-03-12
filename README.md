@@ -5,7 +5,7 @@ This is a port of [glfx.js by Evan Wallace](http://www.github.com/evanw/glfx.js)
 ### Installation
 
 ```shell
-npm install glfx-es6 --save
+npm install @markocen/glfx-es6 --save
 ```
 ```html
 <script src="https://unpkg.com/glfx-es6/dist/glfx-es6.min.js"></script>

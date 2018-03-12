@@ -1,5 +1,5 @@
 {
-  "name": "glfx-es6",
+  "name": "@markocen/glfx-es6",
   "version": "0.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "glfx-es6",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "main": "lib/index.js",
   "module": "es/index.js",
   "jsnext:main": "es/index.js",

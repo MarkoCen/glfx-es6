@@ -14,7 +14,7 @@ npm install @markocen/glfx-es6 --save
 ### Usage
 
 ```js
-import fx from 'glfx-es6'
+import fx from '@markocen/glfx-es6'
 
 fx.canvas().replace(canvasElement)
 // ...
@@ -199,6 +199,21 @@ Provides rotational hue and multiplicative saturation control. RGB color space c
 | :--- | :--- |
 | hue | -1 to 1 (-1 is 180 degree rotation in the negative direction, 0 is no change, and 1 is 180 degree rotation in the positive direction) |
 | saturation | -1 to 1 (-1 is solid gray, 0 is no change, and 1 is maximum contrast) |
+
+### RGBA Color Overlay
+
+```js
+canvas.overlay(red, green, blue, adjust);
+```
+
+Add RGBA color overlay on the top of texture
+
+| Argument | Description |
+| :--- | :--- |
+| red | 0 to 1 |
+| green | 0 to 1 |
+| blue | 0 to 1 |
+| adjust | 0 to 1 |
 
 ### Noise ([demo](http://evanw.github.io/glfx.js/demo/#noise))
 

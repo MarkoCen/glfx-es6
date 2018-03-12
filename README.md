@@ -1,3 +1,5 @@
+Clone from [daviestar/glfx-es6.git](https://www.github.com/daviestar/glfx-es6) with additional methods
+
 This is a port of [glfx.js by Evan Wallace](http://www.github.com/evanw/glfx.js) to work with modern module importers.  The API is exactly the same.
 
 ### Installation

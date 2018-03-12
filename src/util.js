@@ -8,6 +8,10 @@ export function simpleShader(shader, uniforms, textureIn, textureOut) {
   this._.spareTexture.swapWith(textureOut || this._.texture);
 }
 
+export function percentage(val, base) {
+  return (val / base);
+}
+
 export function clamp(lo, value, hi) {
   return Math.max(lo, Math.min(value, hi));
 }

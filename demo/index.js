@@ -130,7 +130,7 @@ $(window).load(function() {
         return;
     }
     try {
-        canvas = fx.canvas().replace($('#placeholder')[0]);
+        canvas = fx.default.canvas().replace($('#placeholder')[0]);
     } catch (e) {
         $('#loading').html('<div class="sadface">:(</div>Sorry, but this browser doesn\'t support WebGL.<br>Please see ' +
             '<a href="http://www.khronos.org/webgl/wiki/Getting_a_WebGL_Implementation">Getting a WebGL implementation</a>');
@@ -461,6 +461,14 @@ var filters = {
             this.addSlider('strength', 'Strength', 0, 5, 2, 0.01);
         }, function() {
             canvas.draw(texture).unsharpMask(this.radius, this.strength).update();
+        }),
+        new Filter('Overlay', function() {
+            this.addSlider('red', 'Red', 0, 1, 0, 0.01);
+            this.addSlider('green', 'Green', 0, 1, 0, 0.01);
+            this.addSlider('blue', 'Blue', 0, 1, 0, 0.01);
+            this.addSlider('adjust', 'Adjust', 0, 1, 0, 0.01);
+        }, function() {
+            canvas.draw(texture).overlay(this.red, this.green, this.blue, this.adjust).update();
         })
     ],
     'Blur': [

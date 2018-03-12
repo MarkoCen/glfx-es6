@@ -4,6 +4,7 @@ export {default as denoise} from './adjust/denoise'
 export {default as hueSaturation} from './adjust/huesaturation'
 export {default as noise} from './adjust/noise'
 export {default as sepia} from './adjust/sepia'
+export {default as overlay} from './adjust/overlay';
 export {default as unsharpMask} from './adjust/unsharpmask'
 export {default as vibrance} from './adjust/vibrance'
 export {default as vignette} from './adjust/vignette'
